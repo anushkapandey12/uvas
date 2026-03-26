@@ -33,16 +33,16 @@ export function ServicesSection() {
 
   const services = [
     {
-      icon: Truck,
-      title: "Trading",
-      description: "Our comprehensive trading division connects manufacturers, suppliers, and end-users across India. We specialize in bulk procurement and distribution of construction materials, industrial supplies, and infrastructure components. With competitive pricing and reliable logistics, we ensure seamless supply chain operations for businesses of all scales.",
-      features: ["Bulk Material Supply", "Competitive Pricing", "Reliable Delivery", "Quality Assurance"]
-    },
-    {
       icon: Building2,
       title: "Construction",
       description: "We provide end-to-end construction services and premium quality materials for residential, commercial, and industrial projects. Our materials meet stringent industry standards, backed by quality certifications. From foundation to finishing, we offer technical consultation and project support to ensure successful completion.",
       features: ["Quality Materials", "Project Support", "Technical Consultation", "Timely Execution"]
+    },
+    {
+      icon: Truck,
+      title: "Trading",
+      description: "Our comprehensive trading division connects manufacturers, suppliers, and end-users across India. We specialize in bulk procurement and distribution of construction materials, industrial supplies, and infrastructure components. With competitive pricing and reliable logistics, we ensure seamless supply chain operations for businesses of all scales.",
+      features: ["Bulk Material Supply", "Competitive Pricing", "Reliable Delivery", "Quality Assurance"]
     },
     {
       icon: Globe,
