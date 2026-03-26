@@ -52,15 +52,16 @@ export function Header() {
               <span className={`text-primary-foreground font-bold transition-all duration-500 ${isScrolled ? 'text-lg' : 'text-xl'}`}>U</span>
             </div>
             <div>
-              <h1 className={`font-serif font-semibold text-foreground leading-none tracking-tight transition-all duration-500 ${isScrolled ? 'text-base' : 'text-lg'}`}>
+              <h1
+                className={`font-serif font-semibold text-foreground leading-tight tracking-tight transition-all duration-500 ${isScrolled ? "text-lg" : "text-xl" }`} >
                 UVAS INFRA
               </h1>
-              <p className={`text-muted-foreground uppercase tracking-wider transition-all duration-500 ${isScrolled ? 'text-[9px]' : 'text-[10px]'}`}>
-                Produit Private Limited
+              <p
+                className={`text-foreground leading-tight tracking-tight transition-all duration-500 ${ isScrolled ? "text-lg" : "text-xl"}`}>
+                 Produit Private Limited
               </p>
             </div>
           </Link>
-
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
