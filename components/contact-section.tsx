@@ -201,7 +201,7 @@ export function ContactSection() {
             <CardContent className="pt-6">
               <a href="https://form.typeform.com/to/PISvIWdL" target="_blank">
                 <button className="w-full h-12 bg-primary text-white rounded-lg text-base font-medium">
-                  Open Contact Form
+                  Connect to Us
                 </button>
               </a>
             </CardContent>
