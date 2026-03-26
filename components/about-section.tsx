@@ -73,7 +73,7 @@ export function AboutSection() {
             <div className={`space-y-5 text-muted-foreground leading-relaxed transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
               <p>
                 UVAS INFRA PRODUIT PRIVATE LIMITED is a distinguished infrastructure company
-                headquartered in the heart of Patna, Bihar. Founded on 9th October, 2013 with an unwavering vision to
+                headquartered in the heart of Patna, Bihar. Founded in 2013 with an unwavering vision to
                 contribute meaningfully to India{"'"}s rapidly growing infrastructure needs, we have
                 established ourselves as a cornerstone of reliability in the trading, construction,
                 exports, and industrial materials sector.
