@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
+import Script from "next/script";
 
 export function ContactSection() {
   const sectionRef = useRef<HTMLDivElement>(null)
@@ -198,116 +199,10 @@ export function ContactSection() {
               </CardDescription>
             </CardHeader>
             <CardContent className="pt-6">
-              <form onSubmit={handleSubmit} className="space-y-5">
-                <div className="grid sm:grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <label htmlFor="name" className="text-xs font-medium text-foreground uppercase tracking-wider">
-                      Full Name *
-                    </label>
-                    <Input
-                      id="name"
-                      placeholder="Your name"
-                      required
-                      value={formData.name}
-                      onChange={handleInputChange}
-                      className="h-11 text-sm border focus:border-primary"
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <label htmlFor="email" className="text-xs font-medium text-foreground uppercase tracking-wider">
-                      Email *
-                    </label>
-                    <Input
-                      id="email"
-                      type="email"
-                      placeholder="your@email.com"
-                      required
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      className="h-11 text-sm border focus:border-primary"
-                    />
-                  </div>
+              <div>
+                <div data-tf-live="PISvIWdL">
                 </div>
-                <div className="space-y-2">
-                  <label htmlFor="phone" className="text-xs font-medium text-foreground uppercase tracking-wider">
-                    Phone Number
-                  </label>
-                  <Input
-                    id="phone"
-                    type="tel"
-                    placeholder="+91 XXXXXXXXXX"
-                    value={formData.phone}
-                    onChange={handleInputChange}
-                    className="h-11 text-sm border focus:border-primary"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <label htmlFor="subject" className="text-xs font-medium text-foreground uppercase tracking-wider">
-                    Subject *
-                  </label>
-                  <Input
-                    id="subject"
-                    placeholder="How can we help?"
-                    required
-                    value={formData.subject}
-                    onChange={handleInputChange}
-                    className="h-11 text-sm border focus:border-primary"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <label htmlFor="message" className="text-xs font-medium text-foreground uppercase tracking-wider">
-                    Message *
-                  </label>
-                  <Textarea
-                    id="message"
-                    placeholder="Tell us about your requirements..."
-                    rows={4}
-                    required
-                    value={formData.message}
-                    onChange={handleInputChange}
-                    className="text-sm border focus:border-primary resize-none"
-                  />
-                </div>
-
-                {formStatus === "error" && (
-                  <div className="flex items-center gap-2 p-3 bg-destructive/10 text-destructive rounded-lg text-sm">
-                    <AlertCircle className="h-4 w-4" />
-                    {errorMessage}
-                  </div>
-                )}
-
-                <Button
-                  type="submit"
-                  size="lg"
-                  className="w-full h-12 text-base font-medium shadow-lg shadow-primary/15 hover:shadow-xl hover:shadow-primary/25 transition-all duration-300"
-                  disabled={formStatus === "sending" || formStatus === "sent"}
-                >
-                  {formStatus === "idle" && (
-                    <>
-                      Send Message
-                      <Send className="ml-2 h-4 w-4" />
-                    </>
-                  )}
-                  {formStatus === "sending" && (
-                    <span className="flex items-center gap-2">
-                      <span className="w-4 h-4 border-2 border-primary-foreground/30 border-t-primary-foreground rounded-full animate-spin" />
-                      Sending...
-                    </span>
-                  )}
-                  {formStatus === "sent" && (
-                    <>
-                      <CheckCircle className="mr-2 h-4 w-4" />
-                      Message Sent Successfully!
-                    </>
-                  )}
-                  {formStatus === "error" && (
-                    <>
-                      Try Again
-                      <Send className="ml-2 h-4 w-4" />
-                    </>
-                  )}
-                </Button>
-              </form>
+              </div>
             </CardContent>
           </Card>
         </div>
