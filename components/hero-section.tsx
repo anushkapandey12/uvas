@@ -64,7 +64,7 @@ export function HeroSection() {
             </div>
 
             <p className={`text-base md:text-lg text-muted-foreground leading-relaxed max-w-xl transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-              UVAS INFRA PRODUIT PRIVATE LIMITED stands as a beacon of excellence in India{"'"}s infrastructure sector. Established on 9th October,2013 with a vision to transform the landscape of trading, construction, and exports, we have emerged as a trusted partner for businesses across the nation. Our commitment to quality, integrity, and innovation drives every project we undertake, from supplying premium construction materials to facilitating international trade in industrial products.
+              UVAS INFRA PRODUIT PRIVATE LIMITED stands as a beacon of excellence in India{"'"}s infrastructure sector. Established in 2013 with a vision to transform the landscape of trading, construction, and exports, we have emerged as a trusted partner for businesses across the nation. Our commitment to quality, integrity, and innovation drives every project we undertake, from supplying premium construction materials to facilitating international trade in industrial products.
             </p>
 
             <div className={`flex flex-wrap gap-4 transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
