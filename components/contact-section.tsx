@@ -199,10 +199,11 @@ export function ContactSection() {
               </CardDescription>
             </CardHeader>
             <CardContent className="pt-6">
-              <div>
-                <div data-tf-live="PISvIWdL">
-                </div>
-              </div>
+              <a href="https://form.typeform.com/to/PISvIWdL" target="_blank">
+                <button className="w-full h-12 bg-primary text-white rounded-lg text-base font-medium">
+                  Open Contact Form
+                </button>
+              </a>
             </CardContent>
           </Card>
         </div>
